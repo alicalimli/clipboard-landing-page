@@ -17,10 +17,32 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
+    *{
+      list-style: none;
+    }
+
     #section-1{
       height:100vh; 
       background-image: url('/images/bg-header-desktop.png'); 
       background-size: contain; background-repeat: no-repeat;
+    }
+
+    #section-3-container{
+      transform: translateX(-20%)
+    }
+
+    #section-3-list{
+      transform: translateX(20%)
+    }
+
+    @media screen and (max-width:960px){
+      #section-3-container{
+      transform: unset;
+    }
+
+    #section-3-list{
+      transform: unset;
+    }
     }
   </style>
 </head>
@@ -50,7 +72,7 @@
     <div class="container-lg">
       <div class="row justify-content-center">
         <div class="col-11 col-md-7 text-center">
-          <h4 class="display-5 fs-2 mb-2">Keep track of your snippets</h4>
+          <h4 class="display-5 fs-3 mb-2">Keep track of your snippets</h4>
           <p class="lead text-muted">
             Clipboard instantly stores any item you copy in the cloud, 
             meaning you can access your snippets immediately on all your 
@@ -61,18 +83,47 @@
     </div>
   </section>
 
+  <section id="section-3" class="mt-5">
+    <div id="section-3-container" class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-8 mb-5 mb-lg-0">
+          <img class="img-fluid" src="/images/image-computer.png" alt="">
+        </div>
 
-  Quick Search
+        <div id="section-3-list" class="col-lg-4 text-center text-lg-start">
+          <ul>
+            <li>
+              <h4 class="display-5 fs-3 mb-2">
+                Quick Search
+              </h4>
+              <p class="lead text-muted">Easily search your snippets by content, category, web address, application, and more.</p>
+            </li>
+            <li>
+              <h4 class="display-5 fs-3 mb-2">
+                iCloud Sync
+              </h4>
+              <p class="lead text-muted">Instantly saves and syncs snippets across all your devices.</p>
+            </li>
+            <li>
+              <h4 class="display-5 fs-3 mb-2">
+                Complete History
+              </h4>
+              <p class="lead text-muted">Retrieve any snippets from the first moment you started using the app.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Easily search your snippets by content, category, web address, application, and more.
 
-  iCloud Sync
+  
 
-  Instantly saves and syncs snippets across all your devices.
+  
 
-  Complete History
+  
 
-  Retrieve any snippets from the first moment you started using the app.
+<!--   
 
   Access Clipboard anywhere
 
@@ -108,7 +159,7 @@
   Privacy Policy
   Press Kit
   Install Guide
-  
+   -->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
