@@ -21,7 +21,12 @@
       list-style: none;
     }
 
+    section{
+      margin-bottom:8rem;
+    }
+
     #section-1{
+      margin-bottom:0;
       height:100vh; 
       background-image: url('/images/bg-header-desktop.png'); 
       background-size: contain; background-repeat: no-repeat;
@@ -69,14 +74,16 @@
   </section>
 
   <section id="section-2">
-    <div class="container-lg">
-      <div class="text-center">
-        <h4 class="display-5 fs-3 mb-2">Keep track of your snippets</h4>
-        <p class="lead text-muted">
-          Clipboard instantly stores any item you copy in the cloud, 
-          meaning you can access your snippets immediately on all your 
-          devices. Our Mac and iOS apps will help you organize everything.
-        </p>
+    <div class="container-sm">
+      <div class="row justify-content-center mb-5">
+        <div class="col-11 col-lg-7 text-center">
+          <h4 class="display-5 fs-3 mb-2">Keep track of your snippets</h4>
+          <p class="lead text-muted">
+            Clipboard instantly stores any item you copy in the cloud, 
+            meaning you can access your snippets immediately on all your 
+            devices. Our Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
       </div>
 
       <div id="section-2-row" class="row justify-content-center">
@@ -224,8 +231,8 @@
   </section>
 
   <footer>
-    <div class="container-fluid bg-light m-0 py-5 px-3">  
-      <div class="row justify-content-center align-items-center gap-3">
+    <div class="container-fluid bg-light m-0">  
+      <div class="row justify-content-center align-items-center gap-3 py-3 px-3">
         <div class="col-11 col-lg-1 d-flex justify-content-center">
           <img src="/images/logo.svg" class="img-fluid" alt="" style="width:3rem;">
         </div>
@@ -249,22 +256,12 @@
           </div>
         </div>
       </div>
+
+      <p class="attribution m-0 pb-2">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/alicalimli_dev">Ali Calimli</a>.
+      </p>
     </div>
-  </footer>
-
-
-<!--   
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-   -->
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://twitter.com/alicalimli_dev">Ali Calimli</a>.
-    </p>
   </footer>
 </body>
 </html>
