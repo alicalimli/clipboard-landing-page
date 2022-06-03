@@ -11,6 +11,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"> 
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,8 +23,22 @@
 
     *{
       list-style: none;
+      text-decoration: none !important;
+      font-family: 'Bai Jamjuree', 'sans serif';
     }
 
+    h4{
+      font-weight: 600 !important;
+    }
+
+    footer a{
+      transition: all 0.3s ease;
+    }
+
+    footer a:hover{
+      color:hsl(171, 66%, 44%) !important;
+    }
+    
     section{
       margin-bottom:8rem;
     }
@@ -59,12 +77,12 @@
         <div class="col-11 col-md-8 d-flex flex-column">
           <div>
             <img src="/images/logo.svg" alt="" class="img-fluid mb-5" style="width:8rem;">
-            <h4 class="display-5 fs-2 mb-2">A history of everything you copy</h4>
+            <h4 class="display-5 fs-2 mb-3">A history of everything you copy</h4>
             <p class="lead text-muted"> Clipboard allows you to track and organize everything you 
               copy. Instantly access your clipboard on all your devices.</p>
           </div>
 
-          <div class="d-grid col-11 gap-2 mx-auto mt-3 d-md-flex justify-content-md-center">
+          <div class="d-grid col-11 gap-2 mx-auto mt-4 d-md-flex justify-content-md-center">
             <button class="btn btn-primary rounded-pill py-2 px-4 btn-lg">Download for iOS</button>
             <button class="btn btn-secondary rounded-pill py-2 px-4 btn-lg">Download for Mac</button>
           </div>
@@ -216,12 +234,12 @@
       <div class="row text-center justify-content-center">
         <div class="col-11 col-md-8 d-flex flex-column">
           <div>
-            <h4 class="display-5 fs-2 mb-2">Clipboard for iOS and Mac OS</h4>
+            <h4 class="display-5 fs-2 mb-3">Clipboard for iOS and Mac OS</h4>
             <p class="lead text-muted">Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
               and you’re ready to start adding to your clipboard.</p>
           </div>
 
-          <div class="d-grid col-11 gap-2 mx-auto mt-3 d-md-flex justify-content-md-center">
+          <div class="d-grid col-11 gap-2 mx-auto mt-4 d-md-flex justify-content-md-center">
             <button class="btn btn-primary rounded-pill py-2 px-4 btn-lg">Download for iOS</button>
             <button class="btn btn-secondary rounded-pill py-2 px-4 btn-lg">Download for Mac</button>
           </div>
@@ -240,16 +258,16 @@
 
         <div class="col-11 col-lg-4 d-flex justify-content-center text-center text-lg-start my-3">
           <div class="row">
-            <a href="#" class="col-12 col-lg-4 mb-2 text-nowrap">FAQs</a>
-            <a href="#" class="col-12 col-lg-4 mb-2 text-nowrap">Contact Us</a>
-            <a href="#" class="col-12 col-lg-4 mb-2 text-nowrap">Privacy Policy</a>
-            <a href="#" class="col-12 col-lg-4 mb-2 text-nowrap">Press Kit</a>
-            <a href="#" class="col-12 col-lg-4 mb-2 text-nowrap">Install Guide</a>
+            <a href="#" class="col-12 col-lg-4 mb-2 text-secondary text-nowrap">FAQs</a>
+            <a href="#" class="col-12 col-lg-4 mb-2 text-secondary text-nowrap">Contact Us</a>
+            <a href="#" class="col-12 col-lg-4 mb-2 text-secondary text-nowrap">Privacy Policy</a>
+            <a href="#" class="col-12 col-lg-4 mb-2 text-secondary text-nowrap">Press Kit</a>
+            <a href="#" class="col-12 col-lg-4 mb-2 text-secondary text-nowrap">Install Guide</a>
           </div>
         </div>
   
         <div class="col-11 col-lg-4 d-flex justify-content-center">
-          <div class="d-flex flex-wrap gap-5 gap-lg-3 justify-content-lg-end">
+          <div class="social-links d-flex flex-wrap gap-5 gap-lg-3 justify-content-lg-end">
             <a href="#"><img src="/images/icon-facebook.svg" alt=""></a>
             <a href="#"><img src="/images/icon-twitter.svg" alt=""></a>
             <a href="#"><img src="/images/icon-instagram.svg" alt=""></a>
