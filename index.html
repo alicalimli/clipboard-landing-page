@@ -16,11 +16,17 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    #section-1{
+      height:100vh; 
+      background-image: url('/images/bg-header-desktop.png'); 
+      background-size: contain; background-repeat: no-repeat;
+    }
   </style>
 </head>
 <body>
 
-  <section class="d-flex align-items-center justify-content-center" style="height:100vh; background-image: url('/images/bg-header-desktop.png'); background-size: contain; background-repeat: no-repeat;">
+  <section id="section-1" class="d-flex align-items-center justify-content-center">
     <div class="container-lg d-flex align-items-center justify-content-center p-0">
       <div class="row text-center justify-content-center">
         <div class="col-11 col-md-8 d-flex gap-1 flex-d flex-column align-items-center">
@@ -29,7 +35,7 @@
           <p class="lead text-muted"> Clipboard allows you to track and organize everything you 
             copy. Instantly access your clipboard on all your devices.</p>
 
-            <div class="d-flex flex-wrap gap-3 mt-3 justify-content-center">
+            <div class="d-grid col-11 gap-2 mx-auto mt-3 d-md-flex justify-content-md-center">
               <button class="btn btn-primary rounded-pill py-2 px-4 btn-lg">Download for iOS</button>
               <button class="btn btn-secondary rounded-pill py-2 px-4 btn-lg">Download for Mac</button>
             </div>
